@@ -1,0 +1,101 @@
+////////////////////////////////////////////////////////
+//	File			:	"StateMachine.h"
+//
+//	Author			:	Leo Cho (LC)
+//
+//	Purpose			:	To control the states
+////////////////////////////////////////////////////////
+
+#ifndef _STATEMACHINE_H_
+#define	_STATEMACHINE_H_
+
+#include "IGameState.h"
+#include <vector>
+
+//////////////////////////////////////////////////////////////////////////
+//	Forward Declrations
+//////////////////////////////////////////////////////////////////////////
+class CRenderManager;
+
+class CStateMachine
+{
+	std::vector<IGameState*>	m_vCurrentState;
+
+	CRenderManager* m_pRenderManager;	// pointer to the render manager
+
+	//Disabling public ability to create/delete aka singleton.
+	CStateMachine();
+	CStateMachine(const CStateMachine& sm);
+	~CStateMachine();
+	CStateMachine& operator=( const CStateMachine& sm);
+
+	//The One True instance of this class.
+	static CStateMachine* m_pInstance;
+
+public:
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"GetInstance"
+	//	Purpose		:	To retrieve the one true instance of this singleton
+	//	Author		:	James Campion (JC)
+	///////////////////////////////////////////////////////////////////////
+	static CStateMachine* GetInstance();
+
+	//////////////////////////////////////////////////////////////////////////
+	//	Function	:	"Initialize"
+	//	Purpose		:	To initalize the static instance of the singleton
+	//	Author		:	Brian Kelsey (BK)
+	//////////////////////////////////////////////////////////////////////////
+	static CStateMachine* Initialize();
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"DeleteInstance"
+	//	Purpose		:	To delete the one true instance of this singleton
+	//	Author		:	James Campion (JC)
+	//	Notes		:	Only to be called by CGame!!!
+	///////////////////////////////////////////////////////////////////////
+	void DeleteInstance();
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"Enter"
+	//	Purpose		:	To enter the state in the first time
+	//	Author		:	Leo Cho (LC)
+	//	
+	//	Parameter	:	IGameState*	pNewState - pointer for the new state
+	///////////////////////////////////////////////////////////////////////
+	void Enter(IGameState* pNewState);
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"Run"
+	//	Purpose		:	This function calls the current state's input / update / render function
+	//	Author		:	Leo Cho (LC)
+	///////////////////////////////////////////////////////////////////////
+	bool Run(float fElapsedTime);
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"ChangeState"
+	//	Purpose		:	This function pops the current state and push back the parameter state
+	//	Author		:	Leo Cho (LC)
+	//	
+	//	Parameter	:	IGameState*	pNewState - pointer for the new state
+	///////////////////////////////////////////////////////////////////////
+	void ChangeState(IGameState* pNewState);
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"AddState"
+	//	Purpose		:	This function keeps the current state and stack the new state on the top.
+	//	Author		:	Leo Cho (LC)
+	//	
+	//	Parameter	:	IGameState*	pNewState - pointer for the new state
+	///////////////////////////////////////////////////////////////////////
+	void AddState(IGameState* pNewState);
+
+	///////////////////////////////////////////////////////////////////////
+	//	Function	:	"Exit"
+	//	Purpose		:	This function pops the top state of current state stack
+	//	Author		:	Leo Cho (LC)
+	///////////////////////////////////////////////////////////////////////
+	void Exit();
+};
+
+#endif

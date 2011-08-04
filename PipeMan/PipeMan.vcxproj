@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50145A83-79BC-40AA-9AE6-929F2A824E37}</ProjectGuid>
+    <RootNamespace>PipeMan</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>GasNGo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Eric\Desktop\Pipeman Project\Pipeman\sdl_soundTEST\sdl_soundTEST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;dinput8.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Eric\Desktop\Pipeman Project\Pipeman\sdl_soundTEST\SDL-1.2.14\lib;C:\Users\Eric\Desktop\Pipeman Project\Pipeman\sdl_soundTEST\sdl_soundTEST\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Users\Eric\Desktop\Pipeman Project\Pipeman\sdl_soundTEST\sdl_soundTEST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;dinput8.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Eric\Desktop\Pipeman Project\Pipeman\sdl_soundTEST\SDL-1.2.14\lib;C:\Users\Eric\Desktop\Pipeman Project\Pipeman\sdl_soundTEST\sdl_soundTEST\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\AircraftCarrier.cpp" />
+    <ClCompile Include="source\BattleCruiser.cpp" />
+    <ClCompile Include="source\CharacterObject.cpp" />
+    <ClCompile Include="source\CollisionManager.cpp" />
+    <ClCompile Include="source\Destroyer.cpp" />
+    <ClCompile Include="source\Frigate.cpp" />
+    <ClCompile Include="source\Game.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\MENU_Button.cpp" />
+    <ClCompile Include="source\MENU_DialogBox.cpp" />
+    <ClCompile Include="source\MENU_MainMenuButton.cpp" />
+    <ClCompile Include="source\MENU_StateButton.cpp" />
+    <ClCompile Include="source\SaveInfo.cpp" />
+    <ClCompile Include="source\RenderManager.cpp" />
+    <ClCompile Include="source\Animation.cpp" />
+    <ClCompile Include="source\AnimationManager.cpp" />
+    <ClCompile Include="source\Frame.cpp" />
+    <ClCompile Include="source\AudioManager.cpp" />
+    <ClCompile Include="source\InputManager.cpp" />
+    <ClCompile Include="source\LevelManager.cpp" />
+    <ClCompile Include="source\FontManager.cpp" />
+    <ClCompile Include="source\HUD_Button.cpp" />
+    <ClCompile Include="source\HUD_GameplayScene.cpp" />
+    <ClCompile Include="source\HUD_InfoArea.cpp" />
+    <ClCompile Include="source\HUD_MoraleBar.cpp" />
+    <ClCompile Include="source\HUD_Object.cpp" />
+    <ClCompile Include="source\HUD_Panel.cpp" />
+    <ClCompile Include="source\HUD_Pipe.cpp" />
+    <ClCompile Include="source\HUD_RadialMeter.cpp" />
+    <ClCompile Include="source\HUD_Scene.cpp" />
+    <ClCompile Include="source\HUD_Text.cpp" />
+    <ClCompile Include="source\HUD_Tooltip.cpp" />
+    <ClCompile Include="source\HUD_UpcomingPipes.cpp" />
+    <ClCompile Include="source\MENU_Base.cpp" />
+    <ClCompile Include="source\MENU_BaseObject.cpp" />
+    <ClCompile Include="source\ObjectManager.cpp" />
+    <ClCompile Include="source\BaseObject.cpp" />
+    <ClCompile Include="source\PipeObject.cpp" />
+    <ClCompile Include="source\IGameState.cpp" />
+    <ClCompile Include="source\LevelState.cpp" />
+    <ClCompile Include="source\MenuObjects.cpp" />
+    <ClCompile Include="source\StateMachine.cpp" />
+    <ClCompile Include="source\CreditsState.cpp" />
+    <ClCompile Include="source\GameplayState.cpp" />
+    <ClCompile Include="source\LoadState.cpp" />
+    <ClCompile Include="source\LoseState.cpp" />
+    <ClCompile Include="source\MainMenuState.cpp" />
+    <ClCompile Include="source\OptionsState.cpp" />
+    <ClCompile Include="source\PauseState.cpp" />
+    <ClCompile Include="source\SplashScreenState.cpp" />
+    <ClCompile Include="source\Vector2f.cpp" />
+    <ClCompile Include="source\Warship.cpp" />
+    <ClCompile Include="source\WinState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\AircraftCarrier.h" />
+    <ClInclude Include="source\BattleCruiser.h" />
+    <ClInclude Include="source\CharacterObject.h" />
+    <ClInclude Include="source\CollisionManager.h" />
+    <ClInclude Include="source\Destroyer.h" />
+    <ClInclude Include="source\Frigate.h" />
+    <ClInclude Include="source\Game.h" />
+    <ClInclude Include="source\MENU_Button.h" />
+    <ClInclude Include="source\MENU_DialogBox.h" />
+    <ClInclude Include="source\MENU_MainMenuButton.h" />
+    <ClInclude Include="source\MENU_StateButton.h" />
+    <ClInclude Include="source\SaveInfo.h" />
+    <ClInclude Include="source\RenderManager.h" />
+    <ClInclude Include="source\Color.h" />
+    <ClInclude Include="source\Rect.h" />
+    <ClInclude Include="source\Texture.h" />
+    <ClInclude Include="source\Animation.h" />
+    <ClInclude Include="source\AnimationManager.h" />
+    <ClInclude Include="source\Frame.h" />
+    <ClInclude Include="source\AudioManager.h" />
+    <ClInclude Include="source\InputManager.h" />
+    <ClInclude Include="source\LevelManager.h" />
+    <ClInclude Include="source\FontManager.h" />
+    <ClInclude Include="source\HUD_Button.h" />
+    <ClInclude Include="source\HUD_GameplayScene.h" />
+    <ClInclude Include="source\HUD_InfoArea.h" />
+    <ClInclude Include="source\HUD_MoraleBar.h" />
+    <ClInclude Include="source\HUD_Object.h" />
+    <ClInclude Include="source\HUD_Panel.h" />
+    <ClInclude Include="source\HUD_Pipe.h" />
+    <ClInclude Include="source\HUD_RadialMeter.h" />
+    <ClInclude Include="source\HUD_Scene.h" />
+    <ClInclude Include="source\HUD_Text.h" />
+    <ClInclude Include="source\HUD_Tooltip.h" />
+    <ClInclude Include="source\HUD_UpcomingPipes.h" />
+    <ClInclude Include="source\MENU_Base.h" />
+    <ClInclude Include="source\MENU_BaseObject.h" />
+    <ClInclude Include="source\ObjectManager.h" />
+    <ClInclude Include="source\BaseObject.h" />
+    <ClInclude Include="source\PipeObject.h" />
+    <ClInclude Include="source\IGameState.h" />
+    <ClInclude Include="source\LevelState.h" />
+    <ClInclude Include="source\MenuObjects.h" />
+    <ClInclude Include="source\StateMachine.h" />
+    <ClInclude Include="source\CreditsState.h" />
+    <ClInclude Include="source\GameplayState.h" />
+    <ClInclude Include="source\LoadState.h" />
+    <ClInclude Include="source\LoseState.h" />
+    <ClInclude Include="source\MainMenuState.h" />
+    <ClInclude Include="source\OptionsState.h" />
+    <ClInclude Include="source\PauseState.h" />
+    <ClInclude Include="source\SplashScreenState.h" />
+    <ClInclude Include="source\Vector2f.h" />
+    <ClInclude Include="source\Warship.h" />
+    <ClInclude Include="source\WinState.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Engines">
+      <UniqueIdentifier>{ae495fac-6adb-43d7-8c45-0f842b671e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Rendering">
+      <UniqueIdentifier>{85e8f8ff-6a97-49e4-88c4-72d42cac07b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Rendering\Render Manager">
+      <UniqueIdentifier>{66dc3f1b-ff90-43ba-add2-20704ee6bf5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Rendering\Utilities">
+      <UniqueIdentifier>{55a7f2d0-5cd7-4c44-b581-03c61e4efdf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Animation">
+      <UniqueIdentifier>{36a58095-c58f-4a01-b463-6a6101087a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Sound">
+      <UniqueIdentifier>{ce13e799-09bb-4818-b8bc-6e40c4617885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Input">
+      <UniqueIdentifier>{5a34de57-08fe-4bdc-8a52-2b326182f38f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Level">
+      <UniqueIdentifier>{02e4a9f4-7f49-442a-8a94-c2d06a341578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Font">
+      <UniqueIdentifier>{a0972c08-66dd-45fb-b03b-31f4d183319c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\HUD">
+      <UniqueIdentifier>{c77911d3-0626-44e4-b9fd-628516bb7cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Menu">
+      <UniqueIdentifier>{dd03cae8-c520-4ce9-81ca-c2f7cccad474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Objects">
+      <UniqueIdentifier>{7e44519d-c343-42b8-bdb1-ff4f73707d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Objects\header">
+      <UniqueIdentifier>{66bc8cbf-bad2-4039-82ee-ec1c648ce49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Objects\source">
+      <UniqueIdentifier>{132a2740-fa7d-4783-a17a-e9ffe4ab09ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game States">
+      <UniqueIdentifier>{301a288f-a405-4cb6-9a04-fff140776b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game States\header">
+      <UniqueIdentifier>{84864935-8f2a-423e-8cdd-3d52190a3fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game States\source">
+      <UniqueIdentifier>{e8d18adb-2050-4390-a10a-17e4ecd4c56c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engines\Collision">
+      <UniqueIdentifier>{ccb8f145-6e26-48fb-918b-0fc8b29027b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SaveInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderManager.cpp">
+      <Filter>Engines\Rendering\Render Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Animation.cpp">
+      <Filter>Engines\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AnimationManager.cpp">
+      <Filter>Engines\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame.cpp">
+      <Filter>Engines\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AudioManager.cpp">
+      <Filter>Engines\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\InputManager.cpp">
+      <Filter>Engines\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LevelManager.cpp">
+      <Filter>Engines\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FontManager.cpp">
+      <Filter>Engines\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Button.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_GameplayScene.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_InfoArea.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_MoraleBar.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Object.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Panel.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Pipe.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_RadialMeter.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Scene.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Text.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_Tooltip.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HUD_UpcomingPipes.cpp">
+      <Filter>Engines\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MENU_Base.cpp">
+      <Filter>Engines\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MENU_BaseObject.cpp">
+      <Filter>Engines\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ObjectManager.cpp">
+      <Filter>Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BaseObject.cpp">
+      <Filter>Game Objects\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PipeObject.cpp">
+      <Filter>Game Objects\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IGameState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LevelState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MenuObjects.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StateMachine.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CreditsState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameplayState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LoadState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LoseState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MainMenuState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OptionsState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PauseState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SplashScreenState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WinState.cpp">
+      <Filter>Game States\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CollisionManager.cpp">
+      <Filter>Engines\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MENU_Button.cpp">
+      <Filter>Engines\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MENU_StateButton.cpp">
+      <Filter>Engines\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Vector2f.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharacterObject.cpp">
+      <Filter>Game Objects\source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MENU_MainMenuButton.cpp">
+      <Filter>Engines\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MENU_DialogBox.cpp">
+      <Filter>Engines\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AircraftCarrier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleCruiser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Destroyer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frigate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Warship.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SaveInfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RenderManager.h">
+      <Filter>Engines\Rendering\Render Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Color.h">
+      <Filter>Engines\Rendering\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Rect.h">
+      <Filter>Engines\Rendering\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Texture.h">
+      <Filter>Engines\Rendering\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Animation.h">
+      <Filter>Engines\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AnimationManager.h">
+      <Filter>Engines\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame.h">
+      <Filter>Engines\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AudioManager.h">
+      <Filter>Engines\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="source\InputManager.h">
+      <Filter>Engines\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LevelManager.h">
+      <Filter>Engines\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FontManager.h">
+      <Filter>Engines\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Button.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_GameplayScene.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_InfoArea.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_MoraleBar.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Object.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Panel.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Pipe.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_RadialMeter.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Scene.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Text.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_Tooltip.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HUD_UpcomingPipes.h">
+      <Filter>Engines\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MENU_Base.h">
+      <Filter>Engines\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MENU_BaseObject.h">
+      <Filter>Engines\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ObjectManager.h">
+      <Filter>Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseObject.h">
+      <Filter>Game Objects\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PipeObject.h">
+      <Filter>Game Objects\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\IGameState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LevelState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MenuObjects.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StateMachine.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CreditsState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameplayState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LoadState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LoseState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MainMenuState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OptionsState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PauseState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SplashScreenState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WinState.h">
+      <Filter>Game States\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CollisionManager.h">
+      <Filter>Engines\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MENU_Button.h">
+      <Filter>Engines\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MENU_StateButton.h">
+      <Filter>Engines\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Vector2f.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CharacterObject.h">
+      <Filter>Game Objects\header</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MENU_MainMenuButton.h">
+      <Filter>Engines\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MENU_DialogBox.h">
+      <Filter>Engines\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AircraftCarrier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BattleCruiser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Destroyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frigate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Warship.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

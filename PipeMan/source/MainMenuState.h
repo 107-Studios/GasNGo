@@ -1,0 +1,93 @@
+////////////////////////////////////////////////////////
+//	File			:	"MainMenuState.h"
+//
+//	Author			:	Leo Cho (LC)
+//
+//	Purpose			:	To control the main menu
+////////////////////////////////////////////////////////
+#ifndef _MAINMENUSTATE_H_
+#define _MAINMENUSTATE_H_
+
+#include "IGameState.h"
+
+class MENU_Base;
+class CTexture;
+
+class CMainMenuState : public IGameState
+{
+	enum BUTTONS {START = 0, CONTINUE, OPTIONS, CREDITS, EXIT, NUM_MAINMENU_OPTIONS};
+
+	MENU_Base* m_cMenu;
+
+	// Make a true singleton
+	CMainMenuState( char* szMSFName );
+	CMainMenuState(const CMainMenuState& pState);
+	CMainMenuState& operator=(const CMainMenuState& pState);
+	~CMainMenuState();
+
+public:
+
+	//////////////////////////////////////////////////////////////////////////
+	// GetInstance():		Gets the static instance of the state
+	//						returning a pointer to the instance
+	//
+	// Return:				CMainMenuState*
+	//////////////////////////////////////////////////////////////////////////
+	static CMainMenuState* GetInstance();
+
+	//////////////////////////////////////////////////////////////////////////
+	// Enter():				Enters the game state setting up all needed
+	//						information based on state
+	//	
+	// Return:				void
+	//////////////////////////////////////////////////////////////////////////
+	void Enter();
+
+	//////////////////////////////////////////////////////////////////////////
+	// Exit():				Exits the game state shutting down all
+	//						initialized objects and resets all data
+	//
+	// Return:				void
+	//////////////////////////////////////////////////////////////////////////
+	void Exit();
+
+	//////////////////////////////////////////////////////////////////////////
+	// Input():				Receives input from the user.
+	//
+	// Return:				void
+	//////////////////////////////////////////////////////////////////////////
+	void Input();
+
+	//////////////////////////////////////////////////////////////////////////
+	// Update():			Updates the state based on the time passed in
+	//						Updates all stored objects based on this time
+	//
+	// In:					fElapsedTime
+	//
+	// Return:				bool
+	//////////////////////////////////////////////////////////////////////////
+	bool Update(float fElapsedTime);
+
+	//////////////////////////////////////////////////////////////////////////
+	// Render()				Renders information to the screen using
+	//						the rendering engine.
+	//
+	// Return:				void
+	//////////////////////////////////////////////////////////////////////////
+	void Render();
+
+};
+
+//////////////////////////////////////////////////////////////////////////
+// Trigger Functions
+//			Methods called when the buttons from the IGameState are pressed
+//
+//
+// Return:				bool - Exits the state from IGameState
+//////////////////////////////////////////////////////////////////////////
+bool Trigger_MainMenu_Play( IGameState* pThisState );
+bool Trigger_MainMenu_Credits( IGameState* pThisState );
+bool Trigger_MainMenu_Options( IGameState* pThisState );
+bool Trigger_MainMenu_Exit( IGameState* pThisState );
+
+#endif
